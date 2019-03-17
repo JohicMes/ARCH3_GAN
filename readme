@@ -1,0 +1,24 @@
+This is a prototype of a Image generating GAN network. 
+
+Currently sending feedback to the generating network is the big issue.
+
+To see an overview of the two competing networks see the images provided in the repository.
+
+How is the training data treated?
+  - Images scraped from google images
+  - All images in the dataset resized to 75x75
+  - Only kept jpeg images 
+  - Changes images to grayscale and appends to appropriate array
+  - Changes into NP array for keras use. 
+  - Grayscale and image size used to speed up testing
+
+Challenges faced / Next Steps
+  - How to do recognise features (Used improper R-CNN model)
+  - Built the wrong kind of CNN
+  - Getting  2D convolution to work in the model
+  - Mode collapse was the biggest issue to overcome
+  - Similarity between classes and image resolution 
+  - Original architecture can be to blame (multiply Label and image before convolution)
+  - Testing on new discriminator with bigger resolution images. 
+
+Johic Mes
